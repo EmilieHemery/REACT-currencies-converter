@@ -1,0 +1,50 @@
+@use 'src/styles/vars';
+
+.select {
+  background-color: vars.$color-light;
+  max-height: 250px;
+  overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: vars.$gutter/2;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: vars.$color-light;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: vars.$color-gradient;
+      outline: 1px solid black;
+    }
+
+    &-title {
+      padding: vars.$gutter;
+      margin-top: vars.$gutter;
+      font-weight: bold;
+    }
+
+    &-search {
+      padding: vars.$gutter;
+      margin-top: vars.$gutter;
+      width: 100%;
+      border: none;
+      color: vars.$color;
+      font: inherit;
+        &::placeholder {
+          color: vars.$color-alt;
+        }
+    }
+    
+    &-currency {
+    padding: vars.$gutter;
+    border-top: 1px solid vars.$color-alt;
+    font-weight: 500;
+    transition: background-color 1s;
+    cursor: pointer;
+      &:hover {
+        background-color: vars.$color-alt;
+        transition-duration: vars.$transition-fast;
+      }
+  }
+}

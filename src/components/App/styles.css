@@ -1,0 +1,16 @@
+body{
+  background-color: grey;
+}
+
+.app {
+  width: 400px;
+  margin: 1em auto;
+  text-align: center;
+  background-color: #67d6c7;
+  padding: 10px;
+  font-family: 'Spartan', sans-serif;
+}
+
+.app img {
+  max-width: 150px;
+}
